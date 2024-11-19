@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+    <link rel="stylesheet" href="../view/css/create-product.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create New Product</h1>
+      <form id="createProductForm">
+        <label for="name">Product Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter product name"
+          required
+        />
+
+        <label for="shortDescription">Short Description:</label>
+        <input
+          type="text"
+          id="shortDescription"
+          placeholder="Short description"
+          required
+        />
+
+        <label for="longDescription">Long Description:</label>
+        <textarea
+          id="longDescription"
+          placeholder="Detailed description"
+        ></textarea>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" placeholder="Enter brand name" required />
+
+        <label for="category">Category:</label>
+        <input
+          type="text"
+          id="category"
+          placeholder="Enter category"
+          required
+        />
+
+        <label for="price">Price:</label>
+        <input
+          type="number"
+          id="price"
+          placeholder="Enter price"
+          required
+          min="0"
+        />
+
+        <label for="discount">Discount (%):</label>
+        <input
+          type="number"
+          id="discount"
+          placeholder="Enter discount"
+          min="0"
+          max="100"
+        />
+
+        <label for="enabled">Enabled:</label>
+        <input type="checkbox" id="enabled" />
+
+        <label for="inStock">In Stock:</label>
+        <input
+          type="number"
+          id="inStock"
+          placeholder="Stock quantity"
+          min="0"
+          required
+        />
+
+        <label for="dimensions">Dimensions (inches):</label>
+        <input type="text" id="dimensions" placeholder="e.g., 10x5x3" />
+
+        <label for="weight">Weight (lbs):</label>
+        <input
+          type="number"
+          id="weight"
+          placeholder="Enter weight"
+          step="0.1"
+        />
+
+        <label for="additionalDetails">Additional Details (key:value):</label>
+        <textarea
+          id="additionalDetails"
+          placeholder="Enter details in key:value format"
+        ></textarea>
+
+        <button type="submit">Create Product</button>
+        <button type="button" id="cancel">Cancel</button>
+      </form>
+    </div>
+    <script src="../scripts/create-product.js"></script>
+  </body>
+</html>

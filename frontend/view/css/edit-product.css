@@ -1,0 +1,39 @@
+.edit-product-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.edit-product-container h1 {
+  text-align: center;
+}
+
+.edit-product-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-product-container label {
+  margin: 10px 0 5px;
+}
+
+.edit-product-container input,
+.edit-product-container textarea,
+.edit-product-container button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#additionalDetails div,
+#extraImages div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}

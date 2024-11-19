@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Product</title>
+    <link rel="stylesheet" href="../view/css/view-product.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Details</h1>
+      <button id="backToDashboard">Back to Dashboard</button>
+    </header>
+    <main>
+      <section id="productDetails">
+        <h2 id="productName"></h2>
+        <p id="shortDescription"></p>
+        <p id="longDescription"></p>
+        <ul>
+          <li><strong>Brand:</strong> <span id="brand"></span></li>
+          <li><strong>Category:</strong> <span id="category"></span></li>
+          <li><strong>Price:</strong> <span id="price"></span></li>
+          <li><strong>Discount:</strong> <span id="discount"></span></li>
+          <li><strong>Stock:</strong> <span id="stock"></span></li>
+          <li><strong>Enabled:</strong> <span id="enabled"></span></li>
+        </ul>
+        <h3>Additional Details</h3>
+        <ul id="additionalDetails"></ul>
+        <h3>Extra Images</h3>
+        <div id="extraImages"></div>
+      </section>
+    </main>
+    <script src="../scripts/view-product.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="../view/css/edit-product.css" />
+  </head>
+  <body>
+    <div class="edit-product-container">
+      <h1>Edit Product</h1>
+      <form id="editProductForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="shortDescription">Short Description:</label>
+        <textarea id="shortDescription" required></textarea>
+
+        <label for="longDescription">Long Description:</label>
+        <textarea id="longDescription"></textarea>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" required />
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" required />
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" step="0.01" required />
+
+        <label for="discount">Discount:</label>
+        <input type="number" id="discount" step="0.01" />
+
+        <label for="stock">In Stock:</label>
+        <input type="number" id="stock" />
+
+        <label for="enabled">Enabled:</label>
+        <input type="checkbox" id="enabled" />
+
+        <h2>Additional Details</h2>
+        <div id="additionalDetails"></div>
+        <button type="button" id="addDetail">Add Detail</button>
+
+        <h2>Extra Images</h2>
+        <div id="extraImages"></div>
+        <button type="button" id="addImage">Add Image</button>
+
+        <button type="submit">Save Changes</button>
+      </form>
+      <button id="cancelButton">Cancel</button>
+    </div>
+    <script src="../scripts/edit-product.js"></script>
+  </body>
+</html>
